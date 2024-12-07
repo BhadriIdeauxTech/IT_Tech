@@ -1,0 +1,2825 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    /* font-family: "Montserrat", sans-serif; */
+}
+
+:root {
+    --orange: #F57C00;
+    --blue: #1565C0;
+    --lightGrey: #E1E9F2;
+    --fields: #EDF2F7;
+    --white: #fff;
+    --mainHead: #333440;
+    --mainheadvariety: #1D1D23;
+    --subHead: #474959;
+    --headingCatchy: #1565C0;
+    --accentColor: #224CB5;
+    --paracolor: #474959;
+    --firstSize: 3.85rem;
+    --secondSize: 3.25rem;
+    --thirdSize: 1.35rem;
+    --forthSize: 1.25rem;
+    --fivthSize: 1.125rem;
+    --mainPara: 1.25rem;
+    --para: 1.15rem;
+}
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./assets/Gilroy-Medium.eot');
+    src: url('./assets/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./assets/Gilroy-Medium.woff2') format('woff2'),
+        url('./assets/Gilroy-Medium.woff') format('woff'),
+        url('./assets/Gilroy-Medium.ttf') format('truetype'),
+        url('./assets/Gilroy-Medium.svg#Gilroy-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./assets/Gilroy-Light.eot');
+    src: url('./assets/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('./assets/Gilroy-Light.woff2') format('woff2'),
+        url('./assets/Gilroy-Light.woff') format('woff'),
+        url('./assets/Gilroy-Light.ttf') format('truetype'),
+        url('./assets/Gilroy-Light.svg#Gilroy-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./assets/Gilroy-Bold.eot');
+    src: url('./assets/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/Gilroy-Bold.woff2') format('woff2'),
+        url('./assets/Gilroy-Bold.woff') format('woff'),
+        url('./assets/Gilroy-Bold.ttf') format('truetype'),
+        url('./assets/Gilroy-Bold.svg#Gilroy-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./assets/Gilroy-Regular.eot');
+    src: url('./assets/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/Gilroy-Regular.woff2') format('woff2'),
+        url('./assets/Gilroy-Regular.woff') format('woff'),
+        url('./assets/Gilroy-Regular.ttf') format('truetype'),
+        url('./assets/Gilroy-Regular.svg#Gilroy-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./assets/Gilroy-SemiBold.eot');
+    src: url('./assets/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/Gilroy-SemiBold.woff2') format('woff2'),
+        url('./assets/Gilroy-SemiBold.woff') format('woff'),
+        url('./assets/Gilroy-SemiBold.ttf') format('truetype'),
+        url('./assets/Gilroy-SemiBold.svg#Gilroy-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1 {
+    font-size: var(--firstSize);
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: -2px;
+    margin-bottom: -10px;
+}
+
+h2 {
+    font-size: var(--secondSize);
+    font-weight: 500;
+    color: #333440;
+    letter-spacing: -2px;
+    margin-bottom: -10px;
+}
+
+.headingFif {
+    font-weight: 600 !important;
+    color: #1D1D23;
+}
+
+h3 {
+    font-size: var(--thirdSize);
+    font-weight: 600 !important;
+    color: #474959;
+}
+
+h4 {
+    font-size: var(--forthSize);
+    font-weight: 500;
+    color: #1565C0;
+    letter-spacing: 14px;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: var(--fivthSize);
+    font-weight: 500;
+    color: #474959;
+}
+
+h6 {
+    font-size: var(--mainPara);
+    font-weight: 400;
+    color: var(--paracolor);
+}
+
+p {
+    font-size: var(--para);
+    font-weight: 400;
+    color: var(--paracolor);
+    line-height: 165%;
+}
+
+#homePage {
+    /* overflow-x: hidden; */
+}
+
+/* Sections Paddings */
+
+.careersSec,
+.servicesSec {
+    padding: 60px 0px;
+}
+
+.aboutSec {
+    padding: 130px 60px;
+}
+
+.featureSec {
+    padding: 120px 0px;
+}
+
+
+.contactSec {
+    padding: 100px 0px;
+}
+
+
+#topHeader {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, .15);
+    background: #fff;
+    font-weight: 500 !important;
+}
+
+#topHeader li a {
+    padding-right: 30px;
+    font-size: var(--fivthSize);
+    font-weight: 500 !important;
+    color: var(--mainHead);
+    transition: all ease-in-out 200ms;
+}
+
+#topHeader li a:hover {
+    color: var(--accentColor) !important;
+    font-weight: 600 !important;
+    transition: all ease-in-out 200ms;
+}
+
+.heroSec {
+    background: url(./images/Set_1.jpg) no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+}
+
+.heroSec .headingFif {
+    color: #fff !important;
+}
+
+.heroSec p {
+    color: #fff !important;
+    font-size: var(--mainPara);
+    padding-top: 30px;
+    max-width: 500px;
+}
+
+.ctaBtn {
+    padding: 14px 40px;
+    border-radius: 65px;
+    border: none;
+    background: var(--blue);
+    box-shadow: inset 0 4px 4px rgba(255, 255, 255, .5), inset -4px -4px 4px rgba(0, 0, 0, .2);
+    position: relative;
+}
+
+.ctaBtn a {
+    color: #fff !important;
+    outline: none;
+}
+
+/* .ctaBtn::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #042b88;
+    border-radius: 50%;
+    position: absolute;
+    transform-origin: center bottom;
+    top: 60px;
+    left: 20%;
+}
+
+.ctaBtn:hover::after {
+    position: absolute;
+    width: 200px !important;
+    height: 200px !important;
+    transform-origin: center bottom;
+    top: -10px;
+    left: 20%;
+    transition: all ease-in-out 500ms;
+} */
+
+.ctaBtn a {
+    font-size: var(--thirdSize);
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutSec {
+    background: url(./images/aboutUs.jpg) no-repeat;
+    background-position: right center;
+    background-size: contain;
+    min-height: 700px;
+}
+
+.aboutUsImgBLock {
+    display: none;
+}
+
+.aboutBlock p {
+    padding-right: 55px;
+    padding-top: 40px;
+}
+
+
+/* AboutUs Styles End Here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.featureSec {
+    background: url(./images/Set_2_1\ 1.jpg), #042b88 !important;
+    background-position: right center !important;
+    background-repeat: no-repeat !important;
+}
+
+.featureSec h2,
+.featureSec h3,
+.featureSec p {
+    color: #fff !important;
+}
+
+.featuresSetMain {
+    padding-top: 70px;
+}
+
+.featureIcon {
+    padding: 16px 16px;
+    background: #E1E9F2 url(./images/industry.svg) no-repeat;
+    background-size: 55%;
+    background-position: center;
+    border-radius: 18px;
+    min-height: 65px;
+    min-width: 65px;
+}
+
+.featureIcon.second {
+    background: #E1E9F2 url(./images/customer.svg) no-repeat;
+    background-size: 58%;
+    background-position: center;
+}
+
+.featureIcon.three {
+    background: #E1E9F2 url(./images/employee.svg) no-repeat;
+    background-size: 56%;
+    background-position: center;
+}
+
+.featureIcon.four {
+    background: #E1E9F2 url(./images/innovation.svg) no-repeat;
+    background-size: 55%;
+    background-position: center;
+}
+
+.featureSet:nth-child(1) p,
+.featureSet:nth-child(4) p {
+    margin-right: 35px;
+}
+
+.featureSet.one,
+.featureSet.second {
+    padding-bottom: 40px;
+}
+
+.featureSet p {
+    padding-top: 25px !important;
+}
+
+.featureHeading {
+    padding-left: 25px !important;
+}
+
+/* Features Section End Here */
+
+
+.servicesSec p {
+    padding-right: 55px;
+    padding-top: 40px;
+}
+
+.servicesClicableMenu ul {
+    list-style-type: none;
+    padding-left: 0px;
+    padding-top: 35px;
+}
+
+.servicesClicableMenu ul li a.active {
+    color: #05388b ;
+    font-size: var(--mainPara);
+    font-weight: 600;
+}
+
+.servicesClicableMenu ul li {
+    font-size: var(--para);
+    font-weight: 500;
+    line-height: 195%;
+}
+
+.servicesClicableMenu ul li a {
+    color: var(--paracolor);
+    text-decoration: none;
+    transition: all ease-in-out 200ms;
+}
+
+.servicesClicableMenu ul li a:hover {
+    color: #083286;
+    font-size: var(--mainPara);
+    font-weight: 600;
+    transition: all ease-in-out 200ms;
+}
+
+#activeTab {
+    color: #083286;
+    font-size: var(--mainPara);
+    font-weight: 600;
+}
+
+.servicesExpandBlock {
+    border-radius: 36px 36px 0px 0px;
+    background: url(./images/DigitalTransformation.png), linear-gradient(180deg, #F4F9FF 50%, #FFF 100%);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 420px 50px 30px;
+}
+
+.servicesExpandBlock.data {
+    background: url(./images/digitalMarketing.jpg), linear-gradient(180deg, #F4F9FF 50%, #FFF 100%);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 420px 50px 30px;
+}
+
+.servicesExpandBlock.application {
+    background: url(./images/Applicaton\ Dev.png), linear-gradient(180deg, #F4F9FF 50%, #FFF 100%);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 420px 50px 30px;
+}
+
+.servicesExpandBlock.cloud {
+    background: url(./images/Cloud\ Enablement.png), linear-gradient(180deg, #F4F9FF 50%, #FFF 100%);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 420px 50px 30px;
+}
+
+
+.servicesExpandBlock.ai {
+    background: url(./images/Ai.png), linear-gradient(180deg, #F4F9FF 50%, #FFF 100%);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 420px 50px 30px;
+}
+
+
+.servicesExpandBlock.machine {
+    background: url(./images/Machine\ Learning.png), linear-gradient(180deg, #F4F9FF 50%, #FFF 100%);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 420px 50px 30px;
+}
+
+
+.servicesExpandBlock.devops {
+    background: url(./images/Devops.png), linear-gradient(180deg, #F4F9FF 50%, #FFF 100%);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 420px 50px 30px;
+}
+
+.servicesExpandBlock.automation {
+    background: url(./images/Ai\ Automation.png), linear-gradient(180deg, #F4F9FF 50%, #FFF 100%);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 420px 50px 30px;
+}
+
+
+.servicesExpandCont h3 {
+    padding-bottom: 20px;
+}
+
+.servicesExpandCont p {
+    padding: 0px;
+}
+
+
+
+.accordion {
+    display: none;
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 2px solid #ced2d6;
+}
+
+.accordion-body {
+    padding: 0px !important;
+}
+
+.accordion-body p {
+    padding: 25px 0px !important;
+}
+
+.accordion-button {
+    font-size: var(--mainPara);
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--lightGrey);
+    font-size: var(--mainPara);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+/* Services Styles End Here */
+
+
+.careersSec {
+    background: #F4F9FF;
+    padding: 150px 0px 80px !important;
+}
+
+.careersBlock p {
+    padding-top: 50px;
+}
+
+.careersbtn {
+    padding: 14px;
+    border-radius: 18px;
+    border: solid 1px #99A1AB;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.careersbtn:hover {
+    background: #05388b ;
+    border: none;
+    box-shadow: inset 0 4px 4px rgba(255, 255, 255, .5), inset -4px -4px 4px rgba(0, 0, 0, .2);
+}
+
+.prev:hover {
+    background: #05388b  url(./images/chevron-left_1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.next:hover {
+    background: #05388b  url(./images/chevron-Right_1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.prev {
+    background: url(./images/chevron-left.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right:5px;
+}
+
+.next {
+    background: url(./images/chevron-right.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.careersSet {
+    background: #fff url(./images/innovation.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 415px 42px 25px;
+    border-radius: 40px;
+    /*min-width: 425px;*/
+}
+
+.careersSet h3 {
+    padding-bottom: 17px;
+}
+
+.careersSet.inno {
+    background: #fff url(./images/innovation.png);
+    background-repeat: no-repeat;
+}
+
+.careersSet.collab {
+    background: #fff url(./images/collabration.png);
+    background-repeat: no-repeat;
+}
+
+.careersSet.growth {
+    background: #fff url(./images/growth.png);
+    background-repeat: no-repeat;
+}
+
+.careersSet.diversity {
+    background: #fff url(./images/Diversity.png);
+    background-repeat: no-repeat;
+}
+
+.careersSet.focus {
+    background: #fff url(./images/customerfocus.png);
+    background-repeat: no-repeat;
+}
+
+.tns-outer button {
+    display: none !important;
+}
+
+
+/* Careers Section End Here */
+
+
+
+.contactSec h2~p {
+    padding-top: 35px;
+    padding-right: 200px;
+}
+
+.addressBlock p {
+    padding-right: 200px;
+}
+
+.addressBlock {
+    padding-top: 90px;
+}
+
+.addressBlock p span {
+    font-weight: 600 !important;
+}
+
+.contactFormBlock input[type="text"]::placeholder {
+    font-weight: 500 !important;
+    text-transform: capitalize;
+}
+
+.contactFormBlock input[type="text"] {
+    font-size: 1.1rem !important;
+    padding: 8px 28px;
+    font-weight: 600;
+    color: var(--subHead);
+    border: solid 1px #00005a !important;
+    outline: none;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.contactFormBlock input[type="text"]:focus,
+.contactFormBlock textarea:focus {
+    border: solid 2px #1565C0;
+}
+
+.contactFormBlock textarea {
+    font-size: 1.1rem !important;
+    width: 100%;
+    min-height: 120px;
+    max-height: 180px;
+    border-radius: 5px;
+    padding: 8px 28px;
+    outline: none;
+    border: solid 1px #00005a;
+    font-weight: 500;
+    color: var(--subHead);
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+#submitBtn {
+    padding: 14px;
+    border-radius: 65px;
+    border: none;
+    background: var(--blue);
+    box-shadow: inset 0 4px 4px rgba(255, 255, 255, .5), inset -4px -4px 4px rgba(0, 0, 0, .2);
+    font-size: var(--thirdSize);
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    max-width: 245px;
+}
+
+.submitButton::before {
+    content: " - Remember this";
+    display: block;
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+
+
+/* Contact Section End Here */
+
+footer {
+    background: #f4f9ff;
+    padding: 60px 0px;
+}
+
+.footerLogo {
+    max-width: 230px;
+    margin-bottom: 18px;
+}
+
+
+.socialmedia a:hover img {
+    border-bottom: solid 1px var(--blue);
+    padding-bottom: 2px;
+    transition: all 100ms ease-in-out;
+}
+
+.quicklinks ul {
+    padding: 30px 0px !important;
+    margin-bottom: 0px;
+}
+
+.quicklinks ul li {
+    padding: 10px 30px;
+    /* text-decoration: ; */
+    transition: 1.2s;
+    list-style-type: none;
+}
+
+.quicklinks ul li a {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 400 !important;
+    text-decoration: none;
+    /* transition: all 100ms ease-in-out; */
+}
+
+.quicklinks ul li:hover ,.quicklinks ul li a:hover{
+    
+    /* text-decoration: underline; */
+    font-size: 1.025rem;
+    color: var(--blue) !important;
+    text-decoration: none;
+    transform: translateX(10px);
+    transition: 1.2s;
+    /* border-bottom: solid 1px #ffffff; */
+    /* transition: all 100ms ease-in-out; */
+}
+.quicklinks ul li a{
+  transition: 1.5s;
+}
+.quicklinks ul li a:hover{
+    color: var(--blue) !important;
+}
+
+.quicklinks ul li a:hover
+.copyright {
+    font-size: .95rem;
+    color: #9696AB;
+    margin-bottom: 0px;
+}
+
+.copyright.contact a {
+    color: #9696AB;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* Footer Section End Here */
+
+
+
+@media (max-width:1399px) and (min-width:1367px) {
+    
+    .servicesExpandBlock 
+    {
+    border-radius: 36px 36px 0px 0px;
+    background: url(./images/webdevelopement.jpg), linear-gradient(180deg, #F4F9FF 50%, #FFF 100%);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+    padding: 370px 50px 30px !important;
+    }
+
+
+    .careersSet {
+        background-size: 370px !important;
+        max-width:370px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1366px) and (min-width:1200px) {
+    :root {
+        --firstSize: 2.8rem;
+        --secondSize: 2.5rem;
+        --thirdSize: 1.25rem;
+        --forthSize: 1.05rem;
+        --fivthSize: 1rem;
+        --mainPara: 1.05rem;
+        --para: 1rem;
+    }
+
+    */ .navbar {
+        padding: 5px 0px !important;
+    }
+
+    .navbar-brand img {
+        max-width: 145px;
+    }
+
+    #topHeader li a {
+        padding-right: 15px;
+    }
+
+    .heroSec {
+        min-height: 600px !important;
+        background-position: center -70px;
+    }
+
+    .heroSec p {
+        max-width: 400px;
+    }
+
+    .ctaBtn a {
+        font-size: 1rem;
+    }
+
+    .aboutSec {
+        background: none !important;
+        padding: 40px 0px;
+        min-height: 570px;
+    }
+
+    .aboutUsImgBLock {
+        display: block;
+    }
+
+    .featureSec {
+        padding: 40px 0px;
+        background: url(./images/Set_2_1\ 1.jpg) #042b88 !important;
+        background-size: contain !important;
+        background-position: right center !important;
+    }
+
+    .featuresSetMain {
+        padding-top: 50px;
+    }
+
+    .featureSet.one,
+    .featureSet.second {
+        padding-bottom: 10px;
+    }
+
+    .featureSet {
+        padding-bottom: 10px;
+    }
+
+    .featureSet p {
+        padding-top: 20px !important;
+    }
+
+    .serviceSec {
+        padding: 40px 0px;
+    }
+
+    .servicesSec p {
+        padding-right: 35px;
+        padding-top: 25px;
+    }
+
+    .servicesClicableMenu ul {
+        padding-top: 30px;
+    }
+
+    .dWrapperHide {
+        padding: 0px 60px;
+    }
+
+    .servicesExpandBlock {
+        padding: 300px 30px 30px;
+    }
+
+    .servicesExpandCont h3 {
+        padding-bottom: 0px;
+    }
+
+    .servicesExpandCont p {
+        padding: 0px !important;
+    }
+
+    .careersSec {
+        padding: 40px 0px 40px !important;
+    }
+
+    .careersSet {
+        background: #fff url(./images/innovation.png);
+        background-size: 350px !important;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding: 330px 42px 25px;
+        border-radius: 40px;
+        max-width: 350px;
+    }
+
+    .careersSet h3 {
+        padding-bottom: 10px !important;
+    }
+
+    .contactSec {
+        padding: 60px 0px;
+    }
+
+    .contactSec h2~p {
+        padding-right: 100px;
+    }
+
+    .addressBlock {
+        padding-top: 50px;
+    }
+
+    .contactFormBlock textarea {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 1rem !important;
+    }
+
+    .contactFormBlock input[type="text"]::placeholder {
+        font-size: 1rem;
+    }
+
+    #submitBtn {
+        font-size: 1rem;
+    }
+
+    .footerLogo {
+        max-width: 175px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1280px) and (min-width:1200px) {
+
+    :root {
+        --firstSize: 2.5rem;
+        --secondSize: 2.3rem;
+        --thirdSize: 1.05rem;
+        --forthSize: 1rem;
+        --fivthSize: 1rem;
+        --mainPara: 1rem;
+        --para: .95rem;
+    }
+
+    .navbar {
+        padding: 5px 0px !important;
+    }
+
+    .navbar-brand img {
+        max-width: 145px;
+    }
+
+    #topHeader li a {
+        padding-right: 13px;
+    }
+
+    .heroSec {
+        min-height: 560px !important;
+        background-position: center -70px;
+    }
+
+    .heroSec p {
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+
+    .ctaBtn a {
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
+
+    .aboutSec {
+        background: none !important;
+        padding: 30px 0px;
+        min-height: 540px;
+    }
+
+    .aboutUsImgBLock {
+        display: block;
+    }
+
+    .featureSec {
+        padding: 60px 0px 40px;
+        background: #042b88 url(./images/Set_2_1\ 1.jpg) !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        background-position: right center !important;
+    }
+
+    .featuresSetMain {
+        padding-top: 40px;
+    }
+
+    .featureIcon {
+        padding: 16px 16px;
+        background: #E1E9F2 url(./images/industry.svg) no-repeat;
+        background-size: 55%;
+        background-position: center;
+        border-radius: 18px;
+        min-height: 55px;
+        min-width: 55px;
+    }
+
+    .featureSet.one,
+    .featureSet.second {
+        padding-bottom: 10px;
+    }
+
+    .featureSet {
+        padding-bottom: 10px;
+    }
+
+    .featureHeading {
+        padding-left: 15px !important;
+    }
+
+    .featureSet p {
+        padding-top: 10px !important;
+        margin-right: 20px !important;
+    }
+
+    .serviceSec {
+        padding: 30px 0px;
+    }
+
+    .servicesSec p {
+        padding-right: 35px;
+        padding-top: 25px;
+    }
+
+    .servicesClicableMenu ul {
+        padding-top: 25px;
+    }
+
+    .dWrapperHide {
+        padding: 0px 40px;
+    }
+
+    .servicesExpandBlock {
+        padding: 320px 30px 30px;
+    }
+
+    .servicesExpandCont h3 {
+        padding-bottom: 0px;
+    }
+
+    .servicesExpandCont p {
+        padding: 0px !important;
+    }
+
+    .careersSec {
+        padding: 40px 0px 40px !important;
+    }
+
+    .careersSet {
+        background: #fff url(./images/innovation.png);
+        background-size: 350px !important;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding: 330px 42px 25px;
+        border-radius: 40px;
+        max-width: 350px;
+    }
+
+    .careersSet h3 {
+        padding-bottom: 10px !important;
+    }
+
+    .contactSec {
+        padding: 60px 0px;
+    }
+
+    .contactSec h2~p {
+        padding-right: 100px;
+    }
+
+    .addressBlock {
+        padding-top: 50px;
+    }
+
+    .contactFormBlock textarea {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 1rem !important;
+    }
+
+    .contactFormBlock input[type="text"]::placeholder {
+        font-size: 1rem;
+    }
+
+    #submitBtn {
+        font-size: 1rem;
+    }
+
+    .footerLogo {
+        max-width: 175px;
+        display: block;
+        margin: 0 auto;
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1199px) and (min-width:992px) {
+    :root {
+        --firstSize: 2.5rem;
+        --secondSize: 2.3rem;
+        --thirdSize: 1.05rem;
+        --forthSize: 1rem;
+        --fivthSize: 1rem;
+        --mainPara: 1rem;
+        --para: .95rem;
+    }
+
+    .navbar {
+        padding: 5px 0px !important;
+    }
+
+    .navbar-brand img {
+        max-width: 145px;
+    }
+
+    #topHeader li a {
+        padding-right: 13px;
+    }
+
+    .heroSec {
+        min-height: 510px !important;
+        background-position: center -70px;
+    }
+
+    .heroSec p {
+        max-width: 400px;
+    }
+
+    .ctaBtn {
+        padding: 10px 30px;
+    }
+
+    .aboutSec {
+        background: none !important;
+        padding: 30px 0px;
+        min-height: 540px;
+    }
+
+    .aboutUsImgBLock {
+        display: block;
+    }
+
+    .aboutUsImgBLock img {
+        max-width: 550px;
+    }
+
+    .aboutBlock p {
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+
+    .featureSec {
+        padding: 310px 0px 0px;
+        background: url("./images/Set_2_Lg.jpg"), #042b88 !important;
+        background-position: right top;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .featuresSetMain {
+        padding-top: 40px;
+    }
+
+    .featureSec h2 {
+        padding-right: 300px;
+    }
+
+    .featureIcon {
+        padding: 0px;
+        background: #E1E9F2 url(./images/industry.svg) no-repeat;
+        background-size: 55%;
+        background-position: center;
+        border-radius: 12px;
+        min-height: 45px;
+        min-width: 45px;
+    }
+
+    .featureSet.one,
+    .featureSet.second {
+        padding-bottom: 10px;
+    }
+
+    .featureSet {
+        padding-bottom: 10px;
+    }
+
+    .featureHeading {
+        padding-left: 0px !important;
+    }
+
+    .featureSet p {
+        padding-top: 10px !important;
+        margin-right: 20px !important;
+    }
+
+    .featureIcon.second {
+        background-size: 52% !important;
+    }
+
+    .featureIcon.three {
+        background-size: 50% !important;
+    }
+
+    .featureIcon.four {
+        background-size: 50% !important;
+    }
+
+    .featureSecLgImg {
+        display: block;
+        padding: 0px !important;
+        background: url(./images/Set_2_Lg.jpg);
+    }
+
+    .featureSecLgCont {
+        padding: 20px 120px 40px;
+    }
+
+    .featureSet p {
+        margin-right: 80px !important;
+    }
+
+    .accordion {
+        display: block;
+    }
+
+    .accordion-body img {
+        max-width: 700px;
+    }
+
+    .careersSec,
+    .servicesSec {
+        padding: 40px 0px;
+    }
+
+    .careersSec {
+        padding: 40px 0px 40px !important;
+    }
+
+    .careersSet {
+        background: #fff url(./images/innovation.png);
+        background-size: 330px !important;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding: 330px 42px 25px;
+        border-radius: 40px;
+        max-width: 320px;
+    }
+
+    .contactSec {
+        padding: 40px 0px;
+    }
+
+    .contactSec h2~p {
+        padding-right: 300px;
+    }
+
+    .addressBlock {
+        padding-top: 30px;
+    }
+
+    .contactFormBlock textarea {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 1rem !important;
+    }
+
+    .contactFormBlock input[type="text"]::placeholder {
+        font-size: .95rem;
+    }
+
+    #submitBtn {
+        font-size: .95rem;
+    }
+
+    .footerLogo {
+        max-width: 175px;
+    }
+    
+    .socialmedia
+    {
+        padding-bottom:20px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) and (min-width:769px) {
+
+    :root {
+        --firstSize: 2.5rem;
+        --secondSize: 2.3rem;
+        --thirdSize: 1.05rem;
+        --forthSize: 1rem;
+        --fivthSize: 1rem;
+        --mainPara: 1rem;
+        --para: .95rem;
+    }
+
+    /* Sections Paddings */
+
+    #language,
+    #account,
+    #search {
+        display: none;
+    }
+
+    .navbar-brand img {
+        max-width: 140px;
+    }
+
+    .heroSec p {
+        max-width: 400px;
+    }
+
+    .ctaBtn {
+        padding: 10px 30px;
+    }
+
+    .heroSec {
+        /* background: url(./images/Set_1_Lg.jpg) no-repeat; */
+        background: url(./images/Set_1_Lg.jpg) no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        padding-top: 80px;
+        min-height: 510px !important;
+        background-position: center -50px;
+    }
+
+
+    .aboutSec {
+        background: none !important;
+        padding: 30px 0px;
+        min-height: 540px;
+    }
+
+    .aboutUsImgBLock {
+        display: block;
+    }
+
+    .aboutUsImgBLock img {
+        max-width: 550px;
+    }
+
+    .aboutBlock p {
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+
+    .featureSec {
+        padding: 380px 0px 0px;
+        background: url("./images/Set_2_Lg.jpg"), #042b88 !important;
+        background-position: center top;
+        background-size: 120% !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .featuresSetMain {
+        padding-top: 60px;
+    }
+
+    .featureSec h2 {
+        padding-right: 250px;
+    }
+
+    .featureIcon {
+        padding: 0px;
+        background: #E1E9F2 url(./images/industry.svg) no-repeat;
+        background-size: 55%;
+        background-position: center;
+        border-radius: 12px;
+        min-height: 55px;
+        min-width: 55px;
+    }
+
+    .featureSecLgImg {
+        display: block;
+        padding: 0px !important;
+    }
+
+    .featureSecLgCont {
+        padding: 20px 60px 15px;
+    }
+
+    .featureSet p {
+        margin-right: 40px !important;
+    }
+
+    .featureSet {
+        padding-bottom: 30px !important;
+    }
+
+    .featureIcon {
+        background-size: 50% !important;
+    }
+
+    .featureIcon.second {
+        background-size: 52% !important;
+    }
+
+    .featureIcon.three {
+        background-size: 50% !important;
+    }
+
+    .featureIcon.four {
+        background-size: 50% !important;
+    }
+
+
+    .careersSec,
+    .servicesSec {
+        padding: 40px 0px;
+    }
+
+    .careersSec {
+        padding: 40px 0px 40px !important;
+    }
+
+    .contactSec {
+        padding: 40px 0px;
+    }
+
+    .contactSec h2~p {
+        padding-right: 150px;
+    }
+
+    .addressBlock {
+        padding-top: 25px;
+    }
+
+    .contactFormBlock textarea {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 1rem !important;
+    }
+
+    .contactFormBlock input[type="text"]::placeholder {
+        font-size: .95rem;
+    }
+
+    #submitBtn {
+        font-size: .95rem;
+    }
+
+    .footerLogo {
+        max-width: 150px;
+    }
+
+    .accordion {
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) and (min-width:591px) {
+
+    :root {
+        --firstSize: 2.5rem;
+        --secondSize: 2.3rem;
+        --thirdSize: 1.05rem;
+        --forthSize: 1rem;
+        --fivthSize: 1rem;
+        --mainPara: 1rem;
+        --para: .95rem;
+    }
+
+    h1 {
+        letter-spacing: -1px;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+        letter-spacing: -1px;
+        margin-bottom: -5px;
+    }
+
+
+
+    /* Sections Paddings */
+
+    #language,
+    #account,
+    #search {
+        display: none;
+    }
+
+    .navbar-brand img {
+        max-width: 140px;
+    }
+
+    .heroSec p {
+        max-width: 400px;
+    }
+
+    .ctaBtn {
+        padding: 10px 30px;
+    }
+
+    .heroSec {
+        background: url(./images/Set_1_Sm.jpg) no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        display: block;
+        padding-top: 200px;
+    }
+
+    .aboutSec {
+        background: none !important;
+        padding: 30px 0px;
+        min-height: 540px;
+    }
+
+    .aboutUsImgBLock {
+        display: block;
+    }
+
+    .aboutUsImgBLock img {
+        max-width: 550px;
+    }
+
+    .aboutBlock p {
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+
+    .featureSec {
+        padding: 380px 0px 0px;
+        background: url("./images/Set_2_Sm.jpg"), #042b88 !important;
+        background-position: center top;
+        background-size: 100% !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .featuresSetMain {
+        padding-top: 60px;
+    }
+
+    .featureSec h2 {
+        padding-right: 150px;
+    }
+
+    .featureIcon {
+        padding: 0px;
+        background: #E1E9F2 url(./images/industry.svg) no-repeat;
+        background-size: 55%;
+        background-position: center;
+        border-radius: 12px;
+        min-height: 55px;
+        min-width: 55px;
+    }
+
+    .featureSecLgImg {
+        display: block;
+        padding: 0px !important;
+    }
+
+    .featureSecLgCont {
+        padding: 10px 60px 0px;
+    }
+
+    .featureSet p {
+        margin-right: 40px !important;
+    }
+
+    .featureSet {
+        padding-bottom: 30px !important;
+    }
+
+
+    .featureHeading {
+        padding-left: 0px !important;
+    }
+
+    .featureIcon.second {
+        background-size: 53% !important;
+    }
+
+    .featureIcon.three {
+        background-size: 53% !important;
+    }
+
+    .featureIcon.four {
+        background-size: 53% !important;
+    }
+
+
+    .enquiryBlock {
+        margin-bottom: 30px;
+    }
+
+
+    .careersSec,
+    .servicesSec {
+        padding: 40px 0px;
+    }
+
+    .careersSec {
+        padding: 40px 0px 40px !important;
+    }
+
+    .contactSec {
+        padding: 40px 0px;
+    }
+
+    .contactSec h2~p {
+        padding-right: 150px;
+    }
+
+    .addressBlock {
+        padding-top: 25px;
+    }
+
+    .addressBlock p {
+        padding-right: 50px;
+    }
+
+    .contactFormBlock textarea {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 1rem !important;
+    }
+
+    .contactFormBlock input[type="text"]::placeholder {
+        font-size: .95rem;
+    }
+
+    #submitBtn {
+        font-size: .95rem;
+    }
+
+    .footerLogo {
+        max-width: 170px;
+    }
+
+    .accordion {
+        display: block;
+    }
+
+}
+
+
+
+@media (max-width:685px) and (min-width:422px) {
+    .featureSec h2 {
+        padding-right: 80px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:590px) and (min-width:421px) {
+
+    :root {
+        --firstSize: 2.3rem;
+        --secondSize: 2rem;
+        --thirdSize: 1.05rem;
+        --forthSize: .95rem;
+        --fivthSize: 1rem;
+        --mainPara: 1rem;
+        --para: .95rem;
+    }
+
+    body {
+        overflow-x: hidden !;
+    }
+
+    h1 {
+        letter-spacing: -1px;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+        letter-spacing: -1px;
+        margin-bottom: -5px;
+    }
+
+
+    /* Sections Paddings */
+
+    #language,
+    #account,
+    #search {
+        display: none;
+    }
+
+    .navbar-brand img {
+        max-width: 150px;
+    }
+
+    .heroSec {
+        background: url(./images/Set_1_Sm.jpg), #042b88 no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        display: block;
+        padding-top: 100px;
+        min-height: 640px !important;
+    }
+
+    .heroSec p {
+        max-width: 350px;
+    }
+
+    .ctaBtn {
+        padding: 10px 30px;
+    }
+
+    .aboutSec {
+        background: none !important;
+        padding: 30px 0px;
+        min-height: 540px;
+    }
+
+    .aboutUsImgBLock {
+        display: block;
+    }
+
+    .aboutUsImgBLock img {
+        max-width: 400px;
+    }
+
+    .aboutBlock p {
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+
+
+    .featureSec {
+        padding: 200px 0px 30px;
+        background: url("./images/Set_2_Sm.jpg"), #042b88 !important;
+        background-position: center top !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .featuresSetMain {
+        padding-top: 60px;
+    }
+
+    .featureSec h2 {
+        padding-right: 150px;
+    }
+
+    .featureIcon {
+        padding: 10px;
+        background: #E1E9F2 url(./images/industry.svg) no-repeat;
+        background-size: 55%;
+        background-position: center;
+        border-radius: 10px;
+        min-height: 55px !important;
+        min-width: 50px !important;
+    }
+
+    .featureIcon.second,
+    .featureIcon.three,
+    .featureIcon.four {
+        background-size: 55% !important;
+        min-height: 55px !important;
+        min-width: 50px !important;
+    }
+
+
+    .featureSecLgImg {
+        display: block;
+        padding: 0px !important;
+    }
+
+    .featureSecLgCont {
+        padding: 10px 30px 0px;
+    }
+
+    .featureSet {
+        padding-bottom: 30px !important;
+    }
+
+    .featureHeading {
+        padding-left: 0px !important;
+    }
+
+    .featureSet p {
+        margin-right: 40px !important;
+        margin-bottom: 0px;
+    }
+
+    .careersSet {
+        background-size: 310px !important;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding: 300px 25px 25px;
+        border-radius: 40px;
+    }
+
+    .careersSec,
+    .servicesSec {
+        padding: 40px 0px;
+    }
+
+    .careersSec {
+        padding: 40px 0px 40px !important;
+    }
+
+    .careersBlock p {
+        padding-top: 20px;
+    }
+
+    .contactSec {
+        padding: 40px 0px;
+    }
+
+    .contactSec h2~p {
+        padding-top: 35px;
+        padding-right: 0px;
+    }
+
+    .addressBlock {
+        padding-top: 25px;
+    }
+
+    .addressBlock p {
+        padding-right: 0px;
+    }
+
+    .contactFormBlock textarea {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: .95rem !important;
+    }
+
+    .contactFormBlock input[type="text"]::placeholder {
+        font-size: .95rem;
+    }
+
+    #submitBtn {
+        font-size: 1rem;
+    }
+
+    .footerLogo {
+        max-width: 170px;
+    }
+
+    .accordion {
+        display: block;
+    }
+
+    .enquiryBlock {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+
+@media (max-width:500px) and (min-width:421px) {
+
+    .featureSec h2 {
+        padding-right: 0px;
+    }
+
+    .servicesSec p {
+        padding-right: 0px;
+        padding-top: 40px;
+    }
+    
+      .quicklinks ul li {
+        padding: 0px 15px !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:420px) and (min-width:376px) {
+
+    :root {
+        --firstSize: 2.3rem;
+        --secondSize: 2rem;
+        --thirdSize: 1.05rem;
+        --forthSize: .95rem;
+        --fivthSize: 1rem;
+        --mainPara: 1rem;
+        --para: .95rem;
+    }
+
+
+    h1 {
+        letter-spacing: -1px;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+        letter-spacing: -1px;
+        margin-bottom: -5px;
+    }
+
+
+    /* Sections Paddings */
+
+    #language,
+    #account,
+    #search {
+        display: none;
+    }
+
+    .navbar-brand img {
+        max-width: 140px;
+    }
+
+    .heroSec {
+        background: url(./images/Set_1_Sm.jpg), #042b88 no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        display: block;
+        padding-top: 100px;
+        min-height: 640px !important;
+    }
+
+    .heroSec p {
+        max-width: 350px;
+    }
+
+    .ctaBtn {
+        padding: 10px 30px;
+    }
+
+    .aboutSec {
+        background: none !important;
+        padding: 30px 0px;
+        min-height: 540px;
+    }
+
+    .aboutUsImgBLock {
+        display: block;
+    }
+
+    .aboutUsImgBLock img {
+        max-width: 365px;
+    }
+
+    .aboutBlock p {
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+
+
+    .featureSec {
+        padding: 200px 0px 30px;
+        background: url("./images/Set_2_Sm.jpg"), #042b88 !important;
+        background-position: center top;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .featuresSetMain {
+        padding-top: 60px;
+    }
+
+    .featureSec h2 {
+        padding-right: 0px;
+    }
+
+    .featureIcon {
+        padding: 10px;
+        background: #E1E9F2 url(./images/industry.svg) no-repeat;
+        background-size: 55%;
+        background-position: center;
+        border-radius: 10px;
+        min-height: 55px !important;
+        min-width: 50px !important;
+    }
+
+    .featureIcon.second,
+    .featureIcon.three,
+    .featureIcon.four {
+        background-size: 55% !important;
+        min-height: 55px !important;
+        min-width: 50px !important;
+    }
+
+
+    .featureSecLgImg {
+        display: block;
+        padding: 0px !important;
+    }
+
+    .featureSecLgCont {
+        padding: 10px 30px 0px;
+    }
+
+    .featureSet {
+        padding-bottom: 30px !important;
+    }
+
+    .featureHeading {
+        padding-left: 0px !important;
+    }
+
+    .featureSet p {
+        margin-right: 40px !important;
+        margin-bottom: 0px;
+    }
+
+
+    .careersSec,
+    .servicesSec {
+        padding: 40px 0px;
+    }
+
+    .careersSec {
+        padding: 40px 0px 40px !important;
+    }
+
+    .careersBlock p {
+        padding-top: 20px;
+    }
+
+
+    .contactSec {
+        padding: 40px 0px;
+    }
+
+    .contactSec h2~p {
+        padding-top: 35px;
+        padding-right: 0px;
+    }
+
+    .addressBlock {
+        padding-top: 25px;
+    }
+
+    .addressBlock p {
+        padding-right: 0px;
+    }
+
+    .contactFormBlock textarea {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: .95rem !important;
+    }
+
+    .contactFormBlock input[type="text"]::placeholder {
+        font-size: .95rem;
+    }
+
+    #submitBtn {
+        font-size: 1rem;
+    }
+
+    .footerLogo {
+        max-width: 180px;
+    }
+
+    .accordion {
+        display: block;
+    }
+
+    .enquiryBlock {
+        margin-bottom: 30px;
+    }
+    
+     .quicklinks ul li {
+        padding: 0px 10px !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:375px) and (min-width:321px) {
+
+    :root {
+        --firstSize: 2.3rem;
+        --secondSize: 2rem;
+        --thirdSize: 1.05rem;
+        --forthSize: .95rem;
+        --fivthSize: 1rem;
+        --mainPara: 1rem;
+        --para: .95rem;
+    }
+
+    h1 {
+        letter-spacing: -1px;
+        margin-bottom: 0px;
+        line-height: 110%;
+    }
+
+    h2 {
+        letter-spacing: -1px;
+        margin-bottom: -5px;
+        line-height: 110%;
+    }
+
+
+    /* Sections Paddings */
+
+    #language,
+    #account,
+    #search {
+        display: none;
+    }
+
+    .navbar-brand img {
+        max-width: 140px;
+    }
+
+    .heroSec {
+        background: url(./images/Set_1_Sm.jpg), #042b88 no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        display: block;
+        padding-top: 100px;
+        min-height: 640px !important;
+    }
+
+    .heroSec p {
+        max-width: 350px;
+    }
+
+    .ctaBtn {
+        padding: 10px 30px;
+    }
+
+    .aboutSec {
+        background: none !important;
+        padding: 25px 0px;
+        min-height: 540px;
+    }
+
+    .aboutUsImgBLock {
+        display: block;
+    }
+
+    .aboutUsImgBLock img {
+        max-width: 350px;
+    }
+
+    .aboutBlock p {
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+
+
+    .featureSec {
+        padding: 200px 0px 30px;
+        background: url("./images/Set_2_Sm.jpg"), #042b88 !important;
+        background-position: center top;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .featuresSetMain {
+        padding-top: 60px;
+    }
+
+    .featureSec h2 {
+        padding-right: 0px;
+    }
+
+    .featureIcon {
+        padding: 10px;
+        background: #E1E9F2 url(./images/industry.svg) no-repeat;
+        background-size: 55%;
+        background-position: center;
+        border-radius: 10px;
+        min-height: 55px !important;
+        min-width: 50px !important;
+    }
+
+    .featureIcon.second,
+    .featureIcon.three,
+    .featureIcon.four {
+        background-size: 55% !important;
+        min-height: 55px !important;
+        min-width: 50px !important;
+    }
+
+
+    .featureSecLgImg {
+        display: block;
+        padding: 0px !important;
+    }
+
+    .featureSecLgCont {
+        padding: 10px 30px 0px;
+    }
+
+    .featureSet {
+        padding-bottom: 30px !important;
+    }
+
+    .featureHeading {
+        padding-left: 15px !important;
+    }
+
+    .featureSet p {
+        margin-right: 40px !important;
+        margin-bottom: 0px;
+    }
+
+    .careersSec,
+    .servicesSec {
+        padding: 30px 0px;
+    }
+
+    .careersSec {
+        padding: 30px 0px 30px !important;
+    }
+
+    .careersBlock p {
+        padding-top: 20px;
+    }
+
+
+    .careersSet {
+        background-size: 310px !important;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding: 310px 25px 25px;
+        border-radius: 40px;
+    }
+
+    .servicesSec p {
+        padding-right: 0px;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .contactSec {
+        padding: 30px 0px;
+    }
+
+    .contactSec h2~p {
+        padding-top: 35px;
+        padding-right: 0px;
+    }
+
+    .addressBlock {
+        padding-top: 25px;
+    }
+
+    .addressBlock p {
+        padding-right: 0px;
+    }
+
+    .contactFormBlock textarea {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: .95rem !important;
+    }
+
+    .contactFormBlock input[type="text"]::placeholder {
+        font-size: .95rem;
+    }
+
+    #submitBtn {
+        font-size: 1rem;
+    }
+
+    .footerLogo {
+        max-width: 180px;
+    }
+
+    .accordion {
+        display: block;
+    }
+
+    .enquiryBlock {
+        margin-bottom: 30px;
+    }
+
+    .quicklinks ul li {
+        padding: 0px 10px;
+    }
+
+    .copyright {
+        padding: 0px 25px 15px;
+        line-height: 100%;
+    }
+
+    .contact a {
+        color: #9696AB;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:2560px) and (min-width:2000px) {
+
+    .heroSec {
+        background-position: center -200px;
+    }
+
+    .featureSec {
+        background-position: center !important;
+    }
+}
+
+
+@media (max-width:1199px) and (min-width:200px) {
+
+    .aboutBlock {
+        padding-top: 40px !important;
+        padding-right: 0px !important;
+    }
+
+    .aboutBlock p {
+        padding-right: 0px;
+    }
+
+    .servicesClicableMenu {
+        display: none;
+    }
+
+    .dWrapperHide {
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:320px) and (min-width:200px) {
+
+    :root {
+        --firstSize: 1.5rem;
+        --secondSize: 1.5rem;
+        --thirdSize: 1.05rem;
+        --forthSize: .95rem;
+        --fivthSize: 1rem;
+        --mainPara: .95rem;
+        --para: .90rem;
+    }
+
+    h1 {
+        margin-bottom: 0px !important;
+        line-height: 110%;
+    }
+
+    h2 {
+        letter-spacing: -1px !important;
+        margin-bottom: 0px !important;
+        line-height: 110%;
+    }
+
+
+
+
+    p {
+        line-height: 145%;
+    }
+
+
+    /* Sections Paddings */
+
+    #language,
+    #account,
+    #search {
+        display: none;
+    }
+
+    .navbar-brand img {
+        max-width: 130px;
+    }
+
+    .heroSec {
+        background: url(./images/Set_1_Sm.jpg), #042b88 no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        display: block;
+        padding-top: 90px;
+        min-height: 540px !important;
+    }
+
+    .heroSec p {
+        max-width: 350px;
+    }
+
+    .ctaBtn {
+        padding: 10px 30px;
+    }
+
+    .aboutSec {
+        background: none !important;
+        padding: 20px 0px;
+        min-height: 540px;
+    }
+
+    .aboutUsImgBLock {
+        display: block;
+    }
+
+    .aboutUsImgBLock img {
+        max-width: 300px;
+    }
+
+    .aboutBlock p {
+        padding-right: 0px;
+        padding-top: 20px;
+    }
+
+
+    .featureSec {
+        padding: 200px 0px 30px;
+        background: url("./images/Set_2_Sm.jpg"), #042b88 !important;
+        background-position: center top;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .featuresSetMain {
+        padding-top: 60px;
+    }
+
+    .featureSec h2 {
+        padding-right: 0px;
+    }
+
+    .featureIcon {
+        padding: 10px;
+        background: #E1E9F2 url(./images/industry.svg) no-repeat;
+        background-size: 55%;
+        background-position: center;
+        border-radius: 10px;
+        min-height: 45px !important;
+        min-width: 45px !important;
+    }
+
+    .featureIcon.second,
+    .featureIcon.three,
+    .featureIcon.four {
+        background-size: 55% !important;
+        min-height: 45px !important;
+        min-width: 45px !important;
+    }
+
+
+    .featureSecLgImg {
+        display: block;
+        padding: 0px !important;
+    }
+
+    .featureSecLgCont {
+        padding: 10px 30px 0px;
+    }
+
+    .featureSet {
+        padding-bottom: 30px !important;
+    }
+
+    .featureHeading {
+        padding-left: 15px !important;
+    }
+
+    .featureSet p {
+        margin-right: 0px !important;
+        margin-bottom: 0px;
+    }
+
+
+    .careersSec,
+    .servicesSec {
+        padding: 30px 0px;
+    }
+
+    .careersSec {
+        padding: 30px 0px 30px !important;
+    }
+
+    .careersBlock p {
+        padding-top: 20px;
+    }
+
+
+    .careersSet {
+        background-size: 280px !important;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding: 280px 20px 20px;
+        border-radius: 40px;
+    }
+
+    .servicesSec p {
+        padding-right: 0px;
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+
+    .contactSec {
+        padding: 30px 0px;
+    }
+
+    .contactSec h2~p {
+        padding-top: 35px;
+        padding-right: 0px;
+    }
+
+    .addressBlock {
+        padding-top: 25px;
+    }
+
+    .addressBlock p {
+        padding-right: 0px;
+    }
+
+    .contactFormBlock textarea {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: .95rem !important;
+    }
+
+    .contactFormBlock input[type="text"]::placeholder {
+        font-size: .95rem;
+    }
+
+    #submitBtn {
+        font-size: 1rem;
+    }
+
+    .footerLogo {
+        max-width: 180px;
+    }
+
+    .accordion {
+        display: block;
+    }
+
+    .enquiryBlock {
+        margin-bottom: 30px;
+    }
+
+    .quicklinks ul li {
+        padding: 0px 3px;
+    }
+
+    .copyright {
+        padding: 0px 25px 15px;
+        line-height: 100%;
+    }
+
+    .contact a {
+        color: #9696AB;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.servicesExpandBlock {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.tns-ovh {
+    clip-path: inset(-100vw -100vw -100vw 0);
+    overflow: visible;
+}
+
+.careersSec {
+    overflow: hidden;
+}
+
+.my-slider .tns-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+button[data-action="stop"] {
+    display: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+    margin-bottom: 10px;
+}
+
+@media (max-width:767px) {
+    div#tns1-iw {
+        margin: 0px !important;
+        padding-left: 15px;
+    }
+}

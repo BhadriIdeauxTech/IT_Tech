@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WUSQA TECHNOLOGIES COMPANY LIMITED</title>
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+
+
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script><!-- Font Awesome CDN -->
+    <link crossorigin="anonymous"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        referrerpolicy="no-referrer" rel="stylesheet" /><!-- Tiny Slider -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+
+
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        .success-message {
+            display: none;
+            margin-top: 12px;
+            color: #007500;
+        }
+    </style>
+    <style>
+        .prev {
+            margin-right: 5px;
+        }
+
+        .rightLine {
+            border-color: #9696AB !important;
+            border-width: 1px;
+            opacity: 75;
+        }
+
+        .ctaBtn:hover {
+            background: #fff;
+            transition: all ease-in-out 200ms;
+        }
+
+        .ctaBtn:hover a {
+            color: #1565C0 !important;
+        }
+
+        #submitBtn:hover {
+            background: #1565C0 !important;
+            color: #fff !important;
+            transition: all ease-in-out 200ms;
+        }
+
+        .quicklinks ul {
+            padding: 0px 0px 0px !important;
+            margin-bottom: 0px;
+        }
+
+        .quicklinks ul li {
+            padding: 0px 0px 15px;
+        }
+
+
+
+
+        @media (max-width:1460px) and (min-width:1366px) {
+            :root {
+                --thirdSize: 1.25rem;
+                --para: .99rem;
+            }
+
+            .aboutSec {
+                background: url(./images/aboutUs.jpg) no-repeat;
+                background-position: right center;
+                background-size: 50%;
+                min-height: 700px;
+            }
+
+            .contactSec h2~p {
+                padding-top: 35px;
+                padding-right: 130px;
+            }
+
+        }
+
+        @media (max-width:1399px) and (min-width:1367px) {
+            .featureSec {
+                padding: 40px 0px;
+                background: url(./images/Set_2_1\ 1.jpg) #042b88 !important;
+                background-size: contain !important;
+                background-position: right center !important;
+                background-repeat: no-repeat;
+            }
+
+            .featureSet:nth-child(1) p,
+            .featureSet:nth-child(4) p {
+                margin-right: 0px !important;
+            }
+
+            .featureSet p {
+                margin-right: 20px;
+            }
+
+
+            .careersSet {
+                background-size: 390px !important;
+                max-width: 390px;
+                padding: 370px 42px 25px;
+            }
+
+            .servicesExpandBlock,
+            .servicesExpandBlock.data,
+            .servicesExpandBlock.application,
+            .servicesExpandBlock.cloud,
+            .servicesExpandBlock.ai,
+            .servicesExpandBlock.machine,
+            .servicesExpandBlock.devops,
+            .servicesExpandBlock.automation {
+                padding: 360px 40px 30px !important;
+            }
+
+        }
+
+        @media (max-width:1366px) and (min-width:1281px) {
+
+            .servicesExpandBlock,
+            .servicesExpandBlock.data,
+            .servicesExpandBlock.application,
+            .servicesExpandBlock.cloud,
+            .servicesExpandBlock.ai,
+            .servicesExpandBlock.machine,
+            .servicesExpandBlock.devops,
+            .servicesExpandBlock.automation {
+                padding: 300px 30px 30px !important;
+            }
+
+            .featureSec {
+                background: url('./images//Set_2_1\ 1.jpg'), #042b88 !important;
+                background-position: right center !important;
+                background-repeat: no-repeat !important;
+            }
+
+            .featureIcon {
+                padding: 16px 16px;
+                background: #E1E9F2 url(./images/industry.svg) no-repeat;
+                background-size: 55%;
+                background-position: center;
+                border-radius: 18px;
+                min-height: 55px;
+                min-width: 55px;
+            }
+
+            .featureSet p {
+                margin-right: 22px !important;
+            }
+
+            .featuresSetMain {
+                padding-top: 60px !important;
+            }
+
+            .careersSet {
+                background-size: 320px !important;
+                max-width: 380px;
+                padding: 310px 28px 25px;
+            }
+        }
+
+
+        @media (max-width:1280px) and (min-width:1200px) {
+            .featureHeading {
+                padding-left: 20px !important;
+            }
+
+            .servicesExpandBlock,
+            .servicesExpandBlock.data,
+            .servicesExpandBlock.application,
+            .servicesExpandBlock.cloud,
+            .servicesExpandBlock.ai,
+            .servicesExpandBlock.machine,
+            .servicesExpandBlock.devops,
+            .servicesExpandBlock.automation {
+                padding: 320px 30px 30px !important;
+            }
+
+            .heroSec {
+                min-height: 510px !important;
+            }
+
+            .footerLogo {
+                max-width: 210px !important;
+                margin: 0px !important;
+            }
+
+            .socialmedia {
+                display: flex !important;
+                margin: 0 !important;
+            }
+        }
+
+
+        @media (max-width:1199px) and (min-width:992px) {
+            .footerLogo {
+                max-width: 175px;
+            }
+
+            .socialmedia {
+                padding-bottom: 20px;
+            }
+
+            .heroSec {
+                min-height: 420px !important;
+            }
+        }
+
+
+        @media (max-width:885px) and (min-width:200px) {
+            .featureSec h2 {
+                padding-right: 0px !important;
+            }
+        }
+
+
+        @media (max-width:991px) and (min-width:200px) {
+            .footerLogo {
+                max-width: 175px;
+            }
+
+            .socialmedia {
+                padding-bottom: 20px;
+            }
+
+            .careersSet {
+                background-size: 350px !important;
+                max-width: 390px;
+                padding: 340px 42px 25px;
+            }
+
+            .careersBlock {
+                margin-bottom: 25px;
+            }
+
+            .careersSetBlock {
+                padding-top: 0px !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1193.0" id="home">
+    <section class="sticky-top" id="topHeader">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="https://gmindsolution.com/">
+                    <img alt="" class="headerLogo" src="images/wusqa_logo.png" height="80px" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a aria-current="page" class="nav-link active" href="https://gmindsolution.com/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutSec">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicesSec">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactSec">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Head Portion Completed Here -->
+
+    <section class="heroSec">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heroBlock">
+                        <h1>Innovating, Integrating,</h1>
+
+                        <h1 class="headingFif">Empowering Technology</h1>
+
+                        <p>At <b>WUSQA TECHNOLOGIES COMPANY LIMITED</b>, we deliver cutting-edge IT solutions to help
+                            businesses thrive in the digital age.
+                            From software development to cloud services, we empower companies to innovate, grow, and
+                            lead with modern technology.</p>
+
+                        <button class="ctaBtn">
+                            <a href="#contactSec">Get Started Today</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Hero Section End Here -->
+
+    <section class="aboutSec" id="aboutSec">
+        <div class="container">
+            <div class="row aboutUs d-flex align-items-center">
+                <div class="col-xl-6 order-1 order-xl-0">
+                    <div class="aboutBlock">
+                        <h4>ABOUT US</h4>
+
+                        <h2>Empowering Innovation</h2>
+
+                        <h2 class="headingFif">Transforming Your Future with Technology</h2>
+
+                        <p>At the forefront of IT innovation, we are a technology-driven organization committed to
+                            delivering cutting-edge solutions that enable businesses to thrive in the digital era. Our
+                            expertise spans across software development, cloud computing, cybersecurity, and IT
+                            consulting. With a client-first approach, we create tailored solutions that optimize
+                            performance, enhance security, and accelerate growth. Partner with us to harness the power
+                            of technology and stay ahead in an ever-evolving digital landscape.</p>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-6 order-0 order-xl-1">
+                    <div class="aboutUsImgBLock"><img alt="" class="img-fluid" src="images/aboutUs.jpg" /></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AboutUs Section -->
+
+    <section class="featureSec">
+        <div class="container-xl">
+            <div class="row featuresBlock"><!--  <div class="col-12 featureSecLgImg">
+                    <img src="./images/Set_2_Lg.jpg" alt="" class="img-fluid featureImageChange">
+                </div> -->
+                <div class="col-xxl-8 col-xl-7 featureSecLgCont">
+                    <h2>Empowering Your Digital Transformation with Cutting-Edge IT Solutions</h2>
+
+                    <div class="row featuresSetMain">
+                        <div class="col-xxl-5 col-md-6 col-12">
+                            <div class="featureSet one">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-lg-2 col-md-3 col-sm-2 col-2">
+                                        <div class="featureIcon one"></div>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <div class="featureHeading">
+                                            <h3>IT Expertise & Consulting</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>Our team of IT professionals and consultants provide expert guidance to navigate
+                                    complex digital transformations, ensuring your business is equipped for the future.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-5 col-md-6 col-12">
+                            <div class="featureSet second">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-lg-2 col-md-3 col-sm-2 col-2">
+                                        <div class="featureIcon second"></div>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <div class="featureHeading">
+                                            <h3>Custom IT Solutions</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>We deliver tailored IT solutions that align with your business goals, ensuring
+                                    optimized processes, secure infrastructures, and scalable growth.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-5 col-md-6 col-12">
+                            <div class="featureSet three">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-lg-2 col-md-3 col-sm-2 col-2">
+                                        <div class="featureIcon three"></div>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <div class="featureHeading">
+                                            <h3>Cloud & Data Solutions</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>We specialize in cloud migration, data analytics, and infrastructure management,
+                                    helping you leverage technology to boost efficiency and make data-driven decisions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-5 col-md-6 col-12">
+                            <div class="featureSet four">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-lg-2 col-md-3 col-sm-2 col-2">
+                                        <div class="featureIcon four"></div>
+                                    </div>
+
+                                    <div class="col-8">
+                                        <div class="featureHeading">
+                                            <h3>Innovation & Cybersecurity</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>Our commitment to innovation keeps your business secure. We implement cutting-edge
+                                    cybersecurity practices to protect your data and infrastructure from evolving
+                                    threats.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Feature Section End Here -->
+
+    <section class="servicesSec" id="servicesSec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="servicesBlock">
+                        <h4>SERVICES</h4>
+
+                        <h2>We Are Always Offering</h2>
+
+                        <h2 class="headingFif">Opportunities For Growth</h2>
+
+                        <p>GiantMind pride in offering a comprehensive suite of IT consulting and delivery services
+                            designed to achieve&nbsp;the diverse needs of our customers. With a relentless commitment to
+                            excellence, we bridge the gap between exceptional IT talent and leading organizations,
+                            empowering them to thrive in the fast-paced world of technology.</p>
+                    </div>
+
+                    <div class="servicesClicableMenu">
+                        <ul id="serviceMenuWrap">
+                            <li><a onclick="myFunction.call(this)" href="javascript:void(0)" id="digital-transformation"
+                                    data-selecttab="digital-transformation" class="active">
+
+                                    Website Developement</a>
+                            </li>
+                            <li><a onclick="myFunction.call(this)" href="javascript:void(0)"
+                                    id="data-engineering-data-analytics"
+                                    data-selecttab="data-engineering-data-analytics">SEO & Digital Marketing</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 dWrapperHide">
+                    <div class="servicesExpandWrapper">
+                        <div class="servicesExpandBlock active" id="digital-transformation">
+                            <div class="servicesExpandCont">
+                                <h3>Website Development</h3>
+
+                                <p>Our website development services are tailored to create custom, high-quality websites
+                                    that provide exceptional user experiences. With a team of expert developers, we
+                                    specialize in building responsive, mobile-friendly, and SEO-optimized websites.
+                                    Whether you're looking for a simple informational site or a complex e-commerce
+                                    platform, we deliver solutions that meet your specific needs. Our goal is to help
+                                    you establish a strong online presence and drive business growth.</p>
+                            </div>
+                        </div>
+
+                        <div class="servicesExpandBlock data" id="data-engineering-data-analytics">
+                            <div class="servicesExpandCont">
+                                <h3>SEO & Digital Marketing</h3>
+
+                                <p>Our team specializes in helping businesses grow online by improving their visibility
+                                    and reach. We offer SEO services to enhance search engine rankings, optimize website
+                                    content, and increase organic traffic. Through digital marketing strategies, we
+                                    ensure businesses engage with their target audience across platforms. Our services
+                                    include pay-per-click advertising (PPC), social media marketing (SMM), content
+                                    marketing, email marketing, and analytics to help you achieve measurable results and
+                                    maximize ROI.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- Only For XXL -->
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne"><button aria-controls="collapseOne"
+                                aria-expanded="true" class="accordion-button" data-bs-target="#collapseOne"
+                                data-bs-toggle="collapse" type="button">Website Development</button></h2>
+
+                        <div aria-labelledby="headingOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample" id="collapseOne">
+                            <div class="accordion-body"><img alt="" class="img-fluid"
+                                    src="./images/webdevelopement.jpg" />
+                                <p>Our website development services are tailored to create custom, high-quality websites
+                                    that provide exceptional user experiences. With a team of expert developers, we
+                                    specialize in building responsive, mobile-friendly, and SEO-optimized websites.
+                                    Whether you're looking for a simple informational site or a complex e-commerce
+                                    platform, we deliver solutions that meet your specific needs. Our goal is to help
+                                    you establish a strong online presence and drive business growth.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo"><button aria-controls="collapseTwo"
+                                aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTwo"
+                                data-bs-toggle="collapse" type="button">
+                                SEO & Digital Marketing
+                            </button>
+                        </h2>
+
+                        <div aria-labelledby="headingTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionExample" id="collapseTwo">
+                            <div class="accordion-body"><img alt="" class="img-fluid"
+                                    src="./images/digitalMarketing.jpg" />
+                                <p>Our team specializes in helping businesses grow online by improving their visibility
+                                    and reach. We offer SEO services to enhance search engine rankings, optimize website
+                                    content, and increase organic traffic. Through digital marketing strategies, we
+                                    ensure businesses engage with their target audience across platforms. Our services
+                                    include pay-per-click advertising (PPC), social media marketing (SMM), content
+                                    marketing, email marketing, and analytics to help you achieve measurable results and
+                                    maximize ROI.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End Here -->
+
+    <section class="careersSec" id="careerSec">
+        <div class="container">
+            <div class="row d-flex align-items-end">
+                <div class="col-lg-6">
+                    <div class="careersBlock">
+                        <h4>Why WUSQA TECHNOLOGIES</h4>
+
+                        <h2>Careers at</h2>
+
+                        <h2 class="headingFif">WUSQA TECHNOLOGIES COMPANY LIMITED</h2>
+
+                        <p>At WUSQA TECHNOLOGIES, we believe that our success is driven by the exceptional talent and
+                            dedication of our team members. If you are passionate about solving technical problems,
+                            thrive in a dynamic work environment, and are committed to delivering excellence, we invite
+                            you to explore career opportunities with us.</p>
+
+                        <div class="custom-controls">
+                            <button class="careersbtn prev"></button>
+                            <button class="careersbtn next"></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6">
+                    <div class="careersSetBlock">
+                        <div class="row careerSetWrapper">
+                            <div class="my-slider">
+                                <div class="col-5">
+                                    <div class="careersSet inno">
+                                        <h3>Innovation</h3>
+
+                                        <p>We foster a culture of innovation, staying at the forefront of the
+                                            ever-evolving IT industry.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-5">
+                                    <div class="careersSet collab">
+                                        <h3>Collabration</h3>
+
+                                        <p>Our teams collaborate closely, sharing knowledge and expertise to achieve
+                                            common goals.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-5">
+                                    <div class="careersSet growth">
+                                        <h3>Growth</h3>
+
+                                        <p>We offer opportunities for professional development to support your maximum
+                                            potential.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-5">
+                                    <div class="careersSet diversity">
+                                        <h3>Diversity</h3>
+
+                                        <p>We value diversity and inclusivity, believing that different perspectives
+                                            drive innovation.</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-5">
+                                    <div class="careersSet focus">
+                                        <h3>Customer Focus</h3>
+
+                                        <p>Our customer-centric approach ensures that we deliver outstanding results and
+                                            client satisfaction.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Career Section End Here -->
+
+    <section class="contactSec" id="contactSec">
+        <div class="container">
+            <div class="row d-flex align-items-end">
+                <div class="col-xl-6">
+                    <div class="contactBlock">
+                        <h4>Contact</h4>
+
+                        <h2>We Are Dedicated To</h2>
+
+                        <h2 class="headingFif">Delivering Excellence</h2>
+
+                        <p>We have strong desire to solve technical challenges for customers , thrive in a fast-paced
+                            environment and are dedicated to delivering excellence</p>
+                    </div>
+
+                    <div class="addressBlock">
+                        <h3>Address</h3>
+
+                        <p><span>India : </span> Bengaluru, Karnataka - India.</p>
+
+                        <div class="enquiryBlock">
+                            <h3>General Inquiries</h3>
+
+                            <p><a href="mailto:info@wusqtechnology.com">info@wusqtechnology.com</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-6">
+                    <form action="#" method="POST" id="contactForm" class="contactFormBlock" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="inputBlock"><input autocomplete="off" class="form__input" name="first_name"
+                                        placeholder="Name" required="" type="text" />
+                                    <div class="error-message" id="firstNameError"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="inputBlock"><input autocomplete="off" class="form__input" name="last_name"
+                                        placeholder="Last Name" required="" type="text" />
+                                    <div class="error-message" id="lastNameError"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="inputBlock"><input autocomplete="off" class="form__input" name="email"
+                                        placeholder="E-Mail" required="" type="text" />
+                                    <div class="error-message" id="emailError"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="inputBlock"><input autocomplete="off" class="form__input"
+                                        name="contact_number" placeholder="Contact Number" required="" type="text" />
+                                    <div class="error-message" id="contactNumberError"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="inputBlock"><input autocomplete="off" class="form__input" name="subject"
+                                        placeholder="Subject" required="" type="text" />
+                                    <div class="error-message" id="subjectError"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="inputBlock"><textarea class="form__input" id="" name="message"
+                                        placeholder="Message" required=""></textarea>
+
+                                    <div class="error-message" id="messageError"></div>
+                                </div>
+                            </div>
+                            <input class="submitButton" id="submitBtn" type="submit" value="Send Message" />
+                        </div>
+                    </form>
+                    <p class="success-message" id="successMessage">Form submitted successfully!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End Here -->
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-4">
+                    <div class="logoSet d-flex flex-column h-100 justify-content-between">
+                        <img src="images/wusqa_logo.png" alt="" class="footerLogo">
+                        <div class="socialmedia d-flex justify-content-start">
+                            <a href="https://x.com/giant_mind_?t=_RHrUyb2R2281kqCjB4Fcg&s=09
+                            " class="pe-3" target="mainWindow">
+                                <img alt="" class="image-fluid mx-auto d-block" src="./images/mediaX.svg" />
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/giantmind-solutions-4277a72b7/" class="pe-3"
+                                target="mainWindow">
+                                <img alt="" class="image-fluid mx-auto d-block" src="./images/mediaInsta.svg" />
+                            </a>
+
+                            <a href="https://www.instagram.com/giantmindsolutions?utm_source=qr&igsh=MThyazRxOGtvdGd3Zg=="
+                                target="mainWindow">
+                                <img alt="" class="image-fluid mx-auto d-block" src="./images/mediaIn.svg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-8 pt-2">
+                    <div class="row d-flex justify-content-xl-end">
+                        <div class="col-xl-3 col-md-2">
+                            <div class="quicklinks">
+                                <ul>
+                                    <!--  <li class="linkhead">Quick Links</li> -->
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Our Vision</a></li>
+                                    <li><a href="">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xxl-5 col-xl-5 col-md-5">
+                            <div class="quicklinks">
+                                <ul>
+                                    <li><a href="">Website Development</a></li>
+                                    <li><a href="">Search Engine Optimization (SEO)</a></li>
+                                    <li><a href="">Digital Marketing</a></li>
+                                    <li><a href="">E-commerce Development</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-md-5">
+                            <div class="quicklinks">
+                                <ul>
+                                    <li><a href="">Mobile App Development</a></li>
+                                    <li><a href="">UI/UX Design</a></li>
+                                    <li><a href="">Content Management Systems (CMS)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center pt-4">
+                    <div class="col-xxl-4 col-xl-5 col-md-6">
+                        <p class="copyright align-middle m-0">Copyright © 2024 TGMS consulting, All Rights Reserved.
+                        </p>
+                    </div>
+
+                    <div class="col">
+                        <hr class="rightLine">
+                        </hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tiny Slider Script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const navbarCollapse = document.getElementById('navbarSupportedContent');
+                const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .dropdown-menu .dropdown-item');
+
+                // Function to close the navbar
+                function closeNavbar() {
+                    if (navbarCollapse.classList.contains('show') && window.innerWidth < 992) {
+                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                            toggle: false // prevent automatic toggling
+                        });
+                        bsCollapse.hide(); // manually hide the navbar
+                    }
+                }
+
+                // Add event listeners to close the navbar on any link click, including dropdown items
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function (event) {
+                        // Only close the navbar when a dropdown item is clicked
+                        if (!this.classList.contains('dropdown-toggle')) {
+                            closeNavbar();
+                        }
+                    });
+                });
+            });
+
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+
+            // Function to remove query parameter from URL
+            function removeQueryParam(param) {
+                const url = new URL(window.location);
+                url.searchParams.delete(param);
+                window.history.replaceState({}, '', url);
+            }
+
+            // Check if the 'status' parameter is 'success'
+            if (getQueryParam('status') === 'success') {
+                // Show the success message
+                document.getElementById('successMessage').style.display = 'block';
+
+                // Hide the success message and remove the 'status' parameter after 1000 milliseconds (1 second)
+                setTimeout(() => {
+                    document.getElementById('successMessage').style.display = 'none';
+                    removeQueryParam('status');
+                }, 10000);
+            }
+            function myFunction(event) {
+                const selectedTab = this.getAttribute('data-selecttab');
+                const tabToCollapseMap = {
+                    'digital-transformation': '#collapseOne',
+                    'data-engineering-data-analytics': '#collapseTwo',
+                    // Add mappings for other data-selecttab values to their corresponding collapse IDs
+                    'enterprise-application-development': '#collapseThree',
+                    'cloud-enablement': '#collapseFour',
+                    'artificial-intelligence': '#collapseFive',
+                    'machine-learning': '#collapseSix',
+                    'devops-enablement': '#collapseSeven'
+                };
+                const collapseId = tabToCollapseMap[selectedTab];
+                if (collapseId) {
+                    // Close any open accordion panels
+                    const allPanels = document.querySelectorAll('.accordion-collapse');
+                    allPanels.forEach(panel => panel.classList.remove('show'));
+
+                    // Show the targeted accordion panel
+                    const collapseElement = document.querySelector(collapseId);
+                    if (collapseElement) {
+                        new bootstrap.Collapse(collapseElement, {
+                            toggle: true // Open the panel
+                        });
+                    }
+                }
+                let menuTabs = document.querySelectorAll('.tabselectdropdown li a');
+                menuTabs.forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                let allTabs = document.querySelectorAll('#serviceMenuWrap li a');
+                allTabs.forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                let serviceBlocks = Array.from(document.getElementsByClassName('servicesExpandBlock'));
+                serviceBlocks.forEach(element => {
+                    element.classList.remove('active');
+                });
+                this.classList.remove('active');
+                this.classList.add('active');
+                let dataValue = this.getAttribute('data-selecttab');
+                let getIDs = document.querySelectorAll(`[id="${dataValue}"]`);
+                getIDs.forEach(element => {
+                    element.classList.remove('active');
+                    element.classList.add('active');
+                });
+            }
+            document.addEventListener('DOMContentLoaded', () => {
+                function focusFirstInput() {
+                    const hash = window.location.hash;
+                    if (hash === '#contactSec') {
+                        const firstInput = document.querySelector('#contactSec input');
+                        if (firstInput) {
+                            firstInput.focus();
+                        }
+                    }
+                }
+
+                // Focus on page load if the URL has the hash
+                focusFirstInput();
+
+                // Focus when hash changes
+                window.addEventListener('hashchange', focusFirstInput);
+            });
+            tns({
+                container: '.my-slider',
+                items: 1.8,
+                slideBy: 'page',
+                autoplay: true,
+                autoplayTimeout: 3000,
+                gutter: 20,
+                controlsContainer: '.custom-controls',
+                prevButton: '.prev',
+                nextButton: '.next',
+                edgePadding: 150,
+                nav: false,
+                center: false,
+                fixedWidth: 420,
+                responsive: {
+                    1920: {
+                        items: 1.8,
+                        edgePadding: 150,
+                        fixedWidth: 420
+                    },
+
+                    1400: {
+                        items: 1.8,
+                        edgePadding: 150,
+                        fixedWidth: 370
+                    },
+
+                    1366: {
+                        items: 1.8,
+                        edgePadding: 100,
+                        fixedWidth: 360
+                    },
+
+                    1024: {
+                        items: 1.8,
+                        edgePadding: 150,
+                        fixedWidth: 320
+                    },
+                    992: {
+                        items: 1.8,
+                        edgePadding: 150,
+                        fixedWidth: 320
+                    },
+
+
+                    767: {
+                        items: 1.8,
+                        edgePadding: 150,
+                        fixedWidth: 320
+                    },
+                    375: {
+                        items: 1,
+                        edgePadding: 0,
+                        fixedWidth: 320
+                    },
+                    320: {
+                        items: 1,
+                        edgePadding: 0,
+                        fixedWidth: 280
+                    },
+                }
+            });
+
+            window.onload = function () {
+                document.getElementById('contactForm').addEventListener('submit', function (e) {
+                    e.preventDefault(); // Prevent default form submission to handle validation
+
+                    // Get form inputs
+                    const firstName = document.querySelector('input[name="first_name"]').value.trim();
+                    const lastName = document.querySelector('input[name="last_name"]').value.trim();
+                    const email = document.querySelector('input[name="email"]').value.trim();
+                    const contactNumber = document.querySelector('input[name="contact_number"]').value.trim();
+                    const subject = document.querySelector('input[name="subject"]').value.trim();
+                    const message = document.querySelector('textarea[name="message"]').value.trim();
+
+                    // Regular expressions for validation
+                    const namePattern = /^[A-Za-z\s]+$/;
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    const phonePattern = /^\d{10}$/;
+
+                    let valid = true;
+
+                    // Reset error messages
+                    document.getElementById('firstNameError').innerText = '';
+                    document.getElementById('lastNameError').innerText = '';
+                    document.getElementById('emailError').innerText = '';
+                    document.getElementById('contactNumberError').innerText = '';
+                    document.getElementById('subjectError').innerText = '';
+                    document.getElementById('messageError').innerText = '';
+
+                    // Validate first name
+                    if (!namePattern.test(firstName)) {
+                        document.getElementById('firstNameError').innerText = 'Please enter a valid first name (letters only).';
+                        document.getElementById('firstNameError').style.display = 'block';
+                        valid = false;
+                    }
+
+                    // Validate last name
+                    if (!namePattern.test(lastName)) {
+                        document.getElementById('lastNameError').innerText = 'Please enter a valid last name (letters only).';
+                        document.getElementById('lastNameError').style.display = 'block';
+                        valid = false;
+                    }
+
+                    // Validate email
+                    if (!emailPattern.test(email)) {
+                        document.getElementById('emailError').innerText = 'Please enter a valid email address.';
+                        document.getElementById('emailError').style.display = 'block';
+                        valid = false;
+                    }
+
+                    // Validate contact number
+                    if (!phonePattern.test(contactNumber)) {
+                        document.getElementById('contactNumberError').innerText = 'Please enter a valid 10-digit phone number.';
+                        document.getElementById('contactNumberError').style.display = 'block';
+                        valid = false;
+                    }
+
+                    // Validate subject
+                    if (subject === '') {
+                        document.getElementById('subjectError').innerText = 'Please enter a subject.';
+                        document.getElementById('subjectError').style.display = 'block';
+                        valid = false;
+                    }
+
+                    // Validate message
+                    if (message === '') {
+                        document.getElementById('messageError').innerText = 'Please enter a message.';
+                        document.getElementById('messageError').style.display = 'block';
+                        valid = false;
+                    }
+
+                    // If all validations pass, submit the form
+                    if (valid) {
+                        this.submit(); // Submit the form if all validations pass
+                    }
+                });
+            };
+        </script>
+    </footer>
+    <!-- Footer End Here -->
+</body>
+
+</html>
